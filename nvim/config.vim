@@ -4,6 +4,7 @@ let maplocalleader = " "
 
 " Don't add to clipboard with deleting with x
 vnoremap x "_x
+nnoremap x "_x
 
 " Yank to system clipboard
 nnoremap <leader>y "+y

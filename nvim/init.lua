@@ -1,5 +1,12 @@
-require("config.lazy")
-vim.cmd('source ./init.vim')
+-- require("config.lazy")
+local function get_script_directory()
+    local info = debug.getinfo(1, "S")
+    local path = info.source:sub(2) -- Remove the leading '@'
+    -- Match everything up to the last path separator
+    return path:match("(.+[/\\])")
+end
+vim.cmd('source ' .. get_script_directory()  .. '/config.vim')
+
 if vim.g.vscode then
     local vscode = require('vscode')
     -- VSCode extension

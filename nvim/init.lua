@@ -1,4 +1,5 @@
--- require("config.lazy")
+require("config.lazy")
+require('leap').create_default_mappings()
 local function get_script_directory()
     local info = debug.getinfo(1, "S")
     local path = info.source:sub(2) -- Remove the leading '@'

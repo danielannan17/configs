@@ -2,6 +2,9 @@
 
 **Windows - Admin Powershell**
 ```
-cd ~/AppData/Local
-New-Item -Path "nvim" -ItemType SymbolicLink -Target ".\nvim"
+New-Item -Path "~/AppData/Local/nvim" -ItemType SymbolicLink -Target "./nvim"
+```
+
+```
+New-Item -Path "~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1" -ItemType SymbolicLink -Target "./Microsoft.PowerShell_profile.ps1"
 ```

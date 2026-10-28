@@ -1,0 +1,85 @@
+{
+  "type" : "group",
+  "actions" : [
+    {
+      "label" : "window",
+      "key" : "a",
+      "actions" : [
+        {
+          "key" : "h",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/left-half",
+          "label" : "left"
+        },
+        {
+          "key" : "l",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/right-half",
+          "label" : "right"
+        },
+        {
+          "key" : "k",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/top-third",
+          "label" : "top"
+        },
+        {
+          "key" : "m",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/middle-third",
+          "label" : "mid"
+        },
+        {
+          "key" : "j",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/bottom-third",
+          "label" : "bottom"
+        },
+        {
+          "key" : "f",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/maximize",
+          "label" : "maximise"
+        }
+      ],
+      "type" : "group"
+    },
+    {
+      "label" : "open",
+      "key" : "o",
+      "actions" : [
+        {
+          "key" : "i",
+          "type" : "application",
+          "value" : "/Applications/iTerm.app",
+          "label" : "iTerm"
+        },
+        {
+          "key" : "w",
+          "type" : "application",
+          "value" : "/Applications/WhatsApp.app",
+          "label" : ""
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/Applications/Firefox Developer Edition.app",
+          "label" : ""
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Cursor.app",
+          "label" : ""
+        },
+        {
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/Discord.app",
+          "label" : ""
+        }
+      ],
+      "type" : "group"
+    }
+  ]
+}

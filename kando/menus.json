@@ -1,0 +1,192 @@
+{
+  "version": "3.0.1",
+  "menus": [
+    {
+      "root": {
+        "name": "Mouse Only",
+        "icon": "mic",
+        "iconTheme": "material-symbols-rounded",
+        "type": "root",
+        "activateWorkflow": {
+          "quickSelectKey": "Backspace",
+          "actions": [
+            {
+              "type": "close-menu"
+            }
+          ]
+        },
+        "closeWorkflow": {
+          "actions": [
+            {
+              "type": "simulate-hotkey",
+              "hotkey": "Escape"
+            }
+          ]
+        },
+        "children": [
+          {
+            "name": "Dictate",
+            "icon": "mic",
+            "iconTheme": "material-symbols-rounded",
+            "type": "submenu",
+            "angle": 0,
+            "hoverWorkflow": {
+              "actions": [
+                {
+                  "type": "execute-command",
+                  "command": "open -g \"superwhisper://mode?key=default\" \"superwhisper://record/start\"",
+                  "detached": true,
+                  "isolated": false
+                }
+              ]
+            },
+            "openWorkflow": {
+              "quickSelectKey": "D",
+              "actions": [
+                {
+                  "type": "execute-command",
+                  "command": "open -g \"superwhisper://mode?key=default\" \"superwhisper://record/start\"",
+                  "detached": true,
+                  "isolated": false
+                }
+              ]
+            },
+            "activateWorkflow": {
+              "quickSelectKey": "Enter",
+              "actions": [
+                {
+                  "type": "close-menu"
+                },
+                {
+                  "type": "execute-command",
+                  "command": "open -g \"superwhisper://record/stop\"",
+                  "detached": true,
+                  "isolated": false
+                }
+              ]
+            },
+            "closeWorkflow": {
+              "actions": [
+                {
+                  "type": "simulate-hotkey",
+                  "hotkey": "Escape"
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "name": "Akra Agent",
+            "icon": "record_voice_over",
+            "iconTheme": "material-symbols-rounded",
+            "type": "submenu",
+            "angle": 90,
+            "hoverWorkflow": {
+              "actions": [
+                {
+                  "type": "execute-command",
+                  "command": "open -g \"superwhisper://mode?key=custom-HSAC\" \"superwhisper://record/start\"",
+                  "detached": true,
+                  "isolated": false
+                }
+              ]
+            },
+            "openWorkflow": {
+              "quickSelectKey": "V",
+              "actions": [
+                {
+                  "type": "execute-command",
+                  "command": "open -g \"superwhisper://mode?key=custom-HSAC\" \"superwhisper://record/start\"",
+                  "detached": true,
+                  "isolated": false
+                }
+              ]
+            },
+            "activateWorkflow": {
+              "quickSelectKey": "Enter",
+              "actions": [
+                {
+                  "type": "close-menu"
+                },
+                {
+                  "type": "execute-command",
+                  "command": "open -g \"superwhisper://record/stop\"",
+                  "detached": true,
+                  "isolated": false
+                }
+              ]
+            },
+            "closeWorkflow": {
+              "actions": [
+                {
+                  "type": "simulate-hotkey",
+                  "hotkey": "Escape"
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "name": "More",
+            "icon": "more_horiz",
+            "iconTheme": "material-symbols-rounded",
+            "type": "submenu",
+            "angle": 180,
+            "openWorkflow": {
+              "quickSelectKey": "M",
+              "actions": []
+            },
+            "activateWorkflow": {
+              "quickSelectKey": "Backspace",
+              "actions": [
+                {
+                  "type": "close-submenu"
+                }
+              ]
+            },
+            "children": []
+          },
+          {
+            "name": "iTerm",
+            "icon": "terminal",
+            "iconTheme": "material-symbols-rounded",
+            "type": "button",
+            "angle": 270,
+            "selectWorkflow": {
+              "quickSelectKey": "T",
+              "actions": [
+                {
+                  "type": "close-menu"
+                },
+                {
+                  "type": "simulate-hotkey",
+                  "hotkey": "ControlLeft+F12"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "shortcut": "Control+F11",
+      "shortcutID": "superwhisper-menu",
+      "useFixedPosition": false,
+      "fixedMenuPosition": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "anchored": true,
+      "hoverMode": true,
+      "tags": []
+    }
+  ],
+  "collections": [
+    {
+      "name": "Favorites",
+      "icon": "favorite",
+      "iconTheme": "material-symbols-rounded",
+      "tags": [
+        "favs"
+      ]
+    }
+  ]
+}

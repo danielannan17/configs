@@ -1,0 +1,4 @@
+#!/bin/sh
+root=$(git rev-parse --show-toplevel)
+"$root/bettertouchtool/export.sh" || exit 0
+git add "$root/bettertouchtool/Default.bttpreset"
